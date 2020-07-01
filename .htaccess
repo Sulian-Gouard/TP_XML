@@ -1,0 +1,7 @@
+<ifmodule mod_rewrite.c>
+  Options +FollowSymlinks
+  RewriteEngine on
+  RewriteRule ^page([1-4]+).html$  index.php?page=$1 [L]
+</ifmodule>
+
+ErrorDocument 404 http://php/ProjetPHP/error.php

@@ -31,7 +31,7 @@ if (isset($_GET['page'])) {
                 </a>
                 <ul class="right hide-on-med-and-down">
                     <?php foreach ($contenu as $partie) { ?>
-                        <li><a href="index.php?page=<?= $partie['id'] ?>" class="saffron-text"><?= $partie->menu ?></a></li>
+                        <li><a href="page<?= $partie['id'] ?>.html" class="saffron-text"><?= $partie->menu ?></a></li>
                     <?php } ?>
                 </ul>
             </div>
