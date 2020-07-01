@@ -42,9 +42,17 @@ if (isset($_GET['page'])) {
             <li><a href="" class="saffron-text"><?= $partie->menu ?></a></li>
         <?php } ?>
     </ul>
+    <div class="container">
+        <div class="center">
+            <div class="row">
+                <h1 class="center"><?= $contenu->page[$test]->title ?></h1>
+            </div>
+            <div class="row">
+                <?= $contenu->page[$test]->content ?>
+            </div>
+        </div>
+    </div>
 
-    <h1 class="center"><?= $contenu->page[$test]->title ?></h1>
-    <div class="center"><?= $contenu->page[$test]->content ?></div>
 
     <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
 </body>
